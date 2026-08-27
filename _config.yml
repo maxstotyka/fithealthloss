@@ -1,3 +1,10 @@
+# Основные настройки
+title: FitHealthLoss — Фитнес, здоровье, питание
+description: Научно-популярный проект о здоровом образе жизни, похудении, правильном питании и фитнесе. Приложение Boost Stamina.
+url: https://maxstotyka.github.io
+baseurl: /fithealthloss
+
+# Плагины
 plugins:
-  - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-sitemap
