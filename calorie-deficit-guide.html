@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Как создать дефицит калорий для похудения — FitHealthLoss</title>
+    <meta name="description" content="Как создать дефицит калорий для похудения: пошаговое руководство с формулой Миффлина-Сан Жеора. Безопасное похудение без голодовок.">
+    <link rel="canonical" href="https://maxstotyka.github.io/fithealthloss/articles/calorie-deficit-guide.html" />
+    <meta name="robots" content="index, follow">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/android-chrome-512x512.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Как создать дефицит калорий для похудения — FitHealthLoss" />
+    <meta property="og:description" content="Пошаговое руководство по созданию дефицита калорий. Формула Миффлина-Сан Жеора, примеры расчёта, частые ошибки." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://maxstotyka.github.io/fithealthloss/articles/calorie-deficit-guide.html" />
+    <meta property="og:site_name" content="FitHealthLoss" />
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Как создать дефицит калорий для похудения",
+      "description": "Пошаговое руководство по созданию дефицита калорий. Формула Миффлина-Сан Жеора, примеры расчёта, частые ошибки.",
+      "datePublished": "2026-08-19",
+      "publisher": {
+        "@type": "Organization",
+        "name": "FitHealthLoss",
+        "url": "https://maxstotyka.github.io/fithealthloss"
+      }
+    }
+    </script>
+
+    <style>
+        /* ===== БАЗОВЫЕ СТИЛИ ===== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            background: #0b0b14;
+            color: #f0f0f0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        .bg-gradient {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(ellipse at 20% 50%, rgba(124,58,237,0.08), transparent 70%),
+                        radial-gradient(ellipse at 80% 20%, rgba(0,200,255,0.04), transparent 50%);
+            pointer-events: none;
+            z-index: -1;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* ===== ШАПКА ===== */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            text-decoration: none;
+        }
+        .logo-img { height: 42px; width: auto; }
+        .brand-text .site-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        .brand-text p {
+            font-size: 0.7rem;
+            color: #aaa;
+            letter-spacing: 0.5px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .nav-links a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: 0.2s;
+        }
+        .nav-links a:hover { color: #b88aff; }
+
+        /* ===== СТАТЬЯ ===== */
+        .article-block {
+            background: rgba(20,20,32,0.5);
+            backdrop-filter: blur(8px);
+            border-radius: 28px;
+            padding: 2.5rem;
+            margin: 2rem 0;
+            border: 1px solid rgba(124,58,237,0.2);
+        }
+        .article-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff 30%, #b88aff 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 0.8rem;
+        }
+        .article-meta {
+            display: flex;
+            gap: 1.5rem;
+            color: #888;
+            font-size: 0.85rem;
+            border-bottom: 1px solid rgba(124,58,237,0.15);
+            padding-bottom: 0.8rem;
+            flex-wrap: wrap;
+        }
+        .article-content h2 {
+            font-size: 1.8rem;
+            margin: 2rem 0 0.8rem;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .article-content h2 i { color: #b88aff; }
+        .article-content h3 {
+            font-size: 1.3rem;
+            margin: 1.5rem 0 0.5rem;
+            color: #b88aff;
+        }
+        .article-content p {
+            margin-bottom: 0.8rem;
+            color: #ddd;
+        }
+        .article-content ul, .article-content ol {
+            margin: 0.5rem 0 1rem 1.5rem;
+            color: #ddd;
+        }
+        .article-content li { margin: 0.3rem 0; }
+
+        /* ===== БЛОК ДЛЯ КОГО ===== */
+        .for-who {
+            background: rgba(124,58,237,0.08);
+            border-radius: 16px;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border: 1px solid rgba(124,58,237,0.15);
+        }
+        .for-who p { margin: 0; font-size: 0.95rem; }
+        .for-who strong { color: #b88aff; }
+
+        /* ===== КАРТОЧКИ РАСХОДА ===== */
+        .cost-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .cost-card {
+            background: rgba(20,20,32,0.5);
+            border-radius: 16px;
+            padding: 1.2rem;
+            text-align: center;
+            border: 1px solid rgba(124,58,237,0.2);
+            transition: 0.3s;
+        }
+        .cost-card:hover {
+            border-color: #7c3aed;
+            transform: translateY(-3px);
+        }
+        .cost-card .cost-icon { font-size: 2rem; color: #b88aff; margin-bottom: 0.4rem; }
+        .cost-card .cost-percent { font-size: 1.8rem; font-weight: 800; color: #7c3aed; }
+        .cost-card .cost-label { font-size: 0.9rem; color: #ddd; font-weight: bold; }
+        .cost-card .cost-desc { font-size: 0.8rem; color: #aaa; margin-top: 0.3rem; }
+
+        /* ===== КАРТОЧКИ ШАГОВ ===== */
+        .step-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.8rem;
+            margin: 1.5rem 0;
+        }
+        .step-card {
+            background: rgba(20,20,32,0.4);
+            border-radius: 16px;
+            padding: 1rem 1.5rem;
+            border: 1px solid rgba(124,58,237,0.15);
+            border-left: 4px solid #7c3aed;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        .step-card .step-num {
+            background: #7c3aed;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+            margin-top: 0.1rem;
+        }
+        .step-card .step-content { flex: 1; }
+        .step-card .step-content strong { color: #b88aff; }
+        .step-card .step-content p { margin: 0.2rem 0 0; font-size: 0.9rem; color: #ddd; }
+        .step-card .step-content .formula-box {
+            background: rgba(0,0,0,0.3);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            margin: 0.5rem 0;
+            font-size: 0.85rem;
+            color: #ccc;
+            border-left: 2px solid #7c3aed;
+        }
+        .step-card .step-content .formula-box.danger { border-left-color: #f87171; }
+
+        /* ===== БЕЗОПАСНЫЙ VS АГРЕССИВНЫЙ ===== */
+        .deficit-compare {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .deficit-card {
+            background: rgba(20,20,32,0.4);
+            border-radius: 16px;
+            padding: 1.2rem 1.5rem;
+            border: 1px solid rgba(124,58,237,0.2);
+        }
+        .deficit-card.safe { border-left: 4px solid #4ade80; }
+        .deficit-card.aggressive { border-left: 4px solid #f87171; }
+        .deficit-card h4 { color: #b88aff; margin: 0 0 0.5rem; }
+        .deficit-card ul { margin: 0; padding-left: 1.2rem; color: #ddd; font-size: 0.9rem; }
+        .deficit-card ul li { margin: 0.2rem 0; }
+        .deficit-card .badge {
+            display: inline-block;
+            padding: 0.1rem 0.8rem;
+            border-radius: 40px;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+        .deficit-card .badge.green { background: rgba(74,222,128,0.2); color: #4ade80; }
+        .deficit-card .badge.red { background: rgba(248,113,113,0.2); color: #f87171; }
+
+        /* ===== ОШИБКИ ===== */
+        .error-card {
+            background: rgba(20,20,32,0.4);
+            border-radius: 16px;
+            padding: 1rem 1.5rem;
+            margin: 0.8rem 0;
+            border: 1px solid rgba(124,58,237,0.15);
+            border-left: 4px solid #fbbf24;
+        }
+        .error-card .error-title { color: #fbbf24; font-weight: bold; display: flex; align-items: center; gap: 8px; }
+        .error-card .error-desc { color: #ddd; font-size: 0.9rem; margin: 0.3rem 0; }
+        .error-card .error-fix { color: #4ade80; font-size: 0.85rem; margin: 0.3rem 0 0; }
+
+        /* ===== МИФЫ ===== */
+        .myth-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .myth-card {
+            background: rgba(20,20,32,0.4);
+            border-radius: 16px;
+            padding: 1.2rem;
+            border: 1px solid rgba(124,58,237,0.15);
+            border-top: 4px solid #7c3aed;
+        }
+        .myth-card .myth-statement { font-style: italic; color: #ddd; font-size: 0.95rem; margin: 0 0 0.5rem; }
+        .myth-card .myth-truth { color: #4ade80; font-size: 0.85rem; border-top: 1px solid rgba(124,58,237,0.2); padding-top: 0.5rem; }
+
+        /* ===== НАУЧНЫЕ ФАКТЫ ===== */
+        .science-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .science-card {
+            background: rgba(20,20,32,0.4);
+            border-radius: 16px;
+            padding: 1.2rem;
+            border: 1px solid rgba(124,58,237,0.15);
+            position: relative;
+        }
+        .science-card .quote-mark { font-size: 2rem; color: #7c3aed; opacity: 0.3; position: absolute; top: 0.3rem; right: 0.8rem; }
+        .science-card .science-text { font-style: italic; color: #ddd; font-size: 0.9rem; line-height: 1.5; margin: 0 0 0.5rem; }
+        .science-card .science-source { font-size: 0.75rem; color: #888; }
+        .science-card .science-source a { color: #b88aff; text-decoration: none; }
+
+        /* ===== ТАБЛИЦА ===== */
+        .norm-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: rgba(20,20,32,0.4);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        .norm-table th, .norm-table td {
+            padding: 0.8rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(124,58,237,0.2);
+        }
+        .norm-table th { background: rgba(124,58,237,0.3); color: #b88aff; font-weight: bold; }
+        .norm-table tr:last-child td { border-bottom: none; }
+
+        /* ===== МИНИ-ГАЙДЫ ===== */
+        .mini-guide {
+            background: rgba(20,20,32,0.4);
+            border-radius: 16px;
+            padding: 1rem 1.5rem;
+            margin: 0.8rem 0;
+            border: 1px solid rgba(124,58,237,0.15);
+        }
+        .mini-guide h4 { color: #b88aff; margin: 0 0 0.3rem; display: flex; align-items: center; gap: 8px; }
+        .mini-guide p { margin: 0; color: #ddd; font-size: 0.9rem; }
+        .mini-guide .g-step { color: #7c3aed; font-weight: bold; margin-right: 0.3rem; }
+
+        /* ===== ПРИМЕР ===== */
+        .calc-example {
+            background: rgba(20,20,32,0.4);
+            border-radius: 16px;
+            padding: 1.2rem 1.5rem;
+            margin: 1.5rem 0;
+            border: 1px solid rgba(124,58,237,0.2);
+        }
+        .calc-example strong { color: #b88aff; }
+        .calc-example ul { margin: 0.5rem 0 0.5rem 1.5rem; color: #ddd; }
+
+        /* ===== FAQ ===== */
+        .faq-item {
+            border-bottom: 1px solid rgba(124,58,237,0.1);
+            padding: 0.8rem 0;
+        }
+        .faq-question {
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            color: #c084fc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.2rem 0;
+        }
+        .faq-question i { transition: 0.3s; }
+        .faq-answer {
+            padding-left: 0.5rem;
+            color: #ccc;
+            display: none;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        .faq-answer.show { display: block; }
+        .faq-answer a { color: #b88aff; text-decoration: none; }
+
+        /* ===== БЛОКИ ===== */
+        .highlight-box {
+            background: rgba(124,58,237,0.15);
+            border-radius: 16px;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid #7c3aed;
+        }
+        .highlight-box ul { margin: 0.5rem 0 0 1.2rem; color: #ddd; }
+
+        /* ===== КНОПКИ ===== */
+        .btn-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 24px;
+            background: #7c3aed;
+            color: white;
+            border-radius: 60px;
+            font-size: 0.95rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 4px 16px rgba(124,58,237,0.35);
+        }
+        .btn-download:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(124,58,237,0.5);
+            background: #6d28d9;
+        }
+
+        /* ===== ПОДВАЛ ===== */
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            color: #666;
+            font-size: 0.8rem;
+        }
+        footer a { color: #666; text-decoration: none; }
+        footer a:hover { color: #b88aff; }
+
+        /* ===== КНОПКА ВВЕРХ ===== */
+        .back-to-top {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            background: rgba(124,58,237,0.6);
+            color: white;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            opacity: 0;
+            transition: 0.3s;
+            pointer-events: none;
+            border: none;
+            backdrop-filter: blur(4px);
+            z-index: 100;
+        }
+        .back-to-top.visible { opacity: 1; pointer-events: auto; }
+        .back-to-top:hover { transform: scale(1.1); }
+
+        /* ===== АДАПТИВ ===== */
+        @media (max-width: 750px) {
+            .container { padding: 0 1rem; }
+            .header { flex-direction: column; align-items: stretch; }
+            .nav-links { justify-content: center; gap: 1rem; }
+            .article-block { padding: 1.2rem; }
+            .article-title { font-size: 1.6rem; }
+            .deficit-compare { grid-template-columns: 1fr; }
+            .step-card { flex-direction: column; align-items: stretch; }
+            .step-card .step-num { align-self: center; }
+            .cost-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 480px) {
+            .article-title { font-size: 1.3rem; }
+            .article-block { padding: 0.8rem; }
+            .cost-grid { grid-template-columns: 1fr; }
+            .myth-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+<div class="bg-gradient"></div>
+
+<div class="container">
+    <!-- ===== ШАПКА ===== -->
+    <div class="header">
+        <a href="https://maxstotyka.github.io/fithealthloss/" class="logo-area">
+            <img src="assets/stk_logo.png" alt="FitHealthLoss" class="logo-img" onerror="this.style.display='none'">
+            <div class="brand-text">
+                <span class="site-name">FitHealthLoss</span>
+                <p>фитнес, здоровье и похудение</p>
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="https://maxstotyka.github.io/fithealthloss/">Главная</a>
+            <a href="https://maxstotyka.github.io/fithealthloss/articles.html">Статьи</a>
+        </div>
+    </div>
+
+    <!-- ===== СТАТЬЯ ===== -->
+    <div class="article-block">
+        <h1 class="article-title">🧮 Как создать дефицит калорий для похудения: пошаговое руководство</h1>
+        <div class="article-meta">
+            <span><i class="far fa-calendar-alt"></i> 19 августа 2026</span>
+            <span><i class="far fa-clock"></i> 8 мин чтения</span>
+            <span><i class="fas fa-tag"></i> Похудение, Калории, Питание</span>
+        </div>
+        <div class="article-content">
+
+            <!-- ===== ВСТУПЛЕНИЕ ===== -->
+            <p><strong>Дефицит калорий</strong> — единственный научно доказанный способ похудеть. Это когда вы тратите больше энергии, чем получаете с едой. Никакие диеты и волшебные таблетки не работают без дефицита.</p>
+            <p>В этой статье — пошаговая инструкция, как <strong>создать дефицит калорий</strong> безопасно и без голодовок.</p>
+
+            <!-- ===== ДЛЯ КОГО ===== -->
+            <div class="for-who">
+                <p><strong><i class="fas fa-bolt" style="color: #b88aff;"></i> Эта статья для вас, если:</strong><br>
+                ✅ Хотите похудеть без голодовок<br>
+                ✅ Не знаете, с чего начать<br>
+                ✅ Пробовали считать калории, но запутались<br>
+                ✅ Вес встал, и вы не знаете, что делать</p>
+            </div>
+
+            <!-- ===== 1. ЧТО ТАКОЕ ДЕФИЦИТ ===== -->
+            <h2><i class="fas fa-fire"></i> 1. Что такое дефицит калорий</h2>
+            <p>Это когда вы тратите калорий <strong>больше, чем съедаете</strong>. Организм берёт недостающую энергию из жировых запасов — вы худеете.</p>
+
+            <div class="highlight-box">
+                <strong>💡 Простая формула:</strong><br>
+                Тратите > Едите = <span style="color:#4ade80;">Худеете</span><br>
+                Тратите = Едите = <span style="color:#fbbf24;">Вес стоит</span><br>
+                Тратите &lt; Едите = <span style="color:#f87171;">Набираете вес</span>
+            </div>
+
+            <!-- ===== 2. ТРИ СОСТАВЛЯЮЩИХ РАСХОДА ===== -->
+            <h2><i class="fas fa-chart-pie"></i> 2. Из чего складывается расход калорий</h2>
+            <div class="cost-grid">
+                <div class="cost-card">
+                    <div class="cost-icon">🫀</div>
+                    <div class="cost-percent">60–75%</div>
+                    <div class="cost-label">Основной обмен (BMR)</div>
+                    <div class="cost-desc">Дыхание, сердце, работа органов</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-icon">🍽️</div>
+                    <div class="cost-percent">~10%</div>
+                    <div class="cost-label">Термический эффект пищи</div>
+                    <div class="cost-desc">Переваривание еды</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-icon">🏃</div>
+                    <div class="cost-percent">20–30%</div>
+                    <div class="cost-label">Физическая активность</div>
+                    <div class="cost-desc">Тренировки, ходьба, NEAT</div>
+                </div>
+            </div>
+            <p><strong>Важно:</strong> Опускаться ниже BMR при похудении <span style="color:#f87171;">опасно</span>. Это минимум для жизни.</p>
+
+            <!-- ===== 3. КАК РАССЧИТАТЬ ===== -->
+            <h2><i class="fas fa-calculator"></i> 3. Как рассчитать дефицит: 4 шага</h2>
+
+            <div class="step-grid">
+                <div class="step-card">
+                    <div class="step-num">1</div>
+                    <div class="step-content">
+                        <strong>Рассчитайте BMR</strong>
+                        <p>Формула Миффлина-Сан Жеора:</p>
+                        <div class="formula-box">
+                            <strong>Мужчины:</strong> BMR = (10 × вес в кг) + (6,25 × рост в см) – (5 × возраст) + 5<br>
+                            <strong>Женщины:</strong> BMR = (10 × вес в кг) + (6,25 × рост в см) – (5 × возраст) – 161
+                        </div>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">2</div>
+                    <div class="step-content">
+                        <strong>Рассчитайте TDEE</strong>
+                        <p>Умножьте BMR на коэффициент активности:</p>
+                        <div class="formula-box">
+                            1,2 — сидячий образ жизни<br>
+                            1,375 — 1–3 тренировки в неделю<br>
+                            1,55 — 3–5 тренировок<br>
+                            1,725 — 6–7 тренировок
+                        </div>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">3</div>
+                    <div class="step-content">
+                        <strong>Создайте дефицит</strong>
+                        <p>Отнимите от TDEE <strong>10–20%</strong> или 300–500 ккал.</p>
+                        <div class="formula-box">
+                            Калории для похудения = TDEE × 0,8<br>
+                            <em>или TDEE – 400 ккал</em>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">4</div>
+                    <div class="step-content">
+                        <strong>Проверьте порог</strong>
+                        <p>Не опускайтесь ниже:</p>
+                        <div class="formula-box danger">
+                            ⚠️ 1200 ккал — для женщин<br>
+                            ⚠️ 1500 ккал — для мужчин
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== 4. ПРИМЕР ===== -->
+            <h2><i class="fas fa-user"></i> 4. Пример расчёта</h2>
+            <div class="calc-example">
+                <p><strong>👩 Женщина, 30 лет</strong></p>
+                <ul>
+                    <li><strong>Вес:</strong> 75 кг</li>
+                    <li><strong>Рост:</strong> 165 см</li>
+                    <li><strong>Активность:</strong> 3 тренировки в неделю (КФА = 1,375)</li>
+                </ul>
+                <p><strong>Шаг 1. BMR:</strong><br>
+                BMR = (10 × 75) + (6,25 × 165) – (5 × 30) – 161 = <strong>1470 ккал</strong></p>
+                <p><strong>Шаг 2. TDEE:</strong><br>
+                TDEE = 1470 × 1,375 = <strong>2021 ккал</strong></p>
+                <p><strong>Шаг 3. Дефицит 15%:</strong><br>
+                Калории для похудения = 2021 × 0,85 = <strong>1718 ккал</strong></p>
+                <p><strong>Проверка:</strong> 1718 > 1200 ✅ безопасно</p>
+            </div>
+
+            <!-- ===== 5. БЕЗОПАСНЫЙ VS АГРЕССИВНЫЙ ===== -->
+            <h2><i class="fas fa-balance-scale"></i> 5. Какой дефицит выбрать</h2>
+            <div class="deficit-compare">
+                <div class="deficit-card safe">
+                    <h4><span class="badge green">✅ Безопасный</span></h4>
+                    <ul>
+                        <li><strong>Темп:</strong> 0,5–1 кг/неделю</li>
+                        <li><strong>Дефицит:</strong> 300–500 ккал</li>
+                        <li>Сохраняет мышцы</li>
+                        <li>Не замедляет метаболизм</li>
+                        <li>Устойчивый результат</li>
+                    </ul>
+                </div>
+                <div class="deficit-card aggressive">
+                    <h4><span class="badge red">⚠️ Агрессивный</span></h4>
+                    <ul>
+                        <li><strong>Темп:</strong> &gt;1 кг/неделю</li>
+                        <li><strong>Дефицит:</strong> &gt;25% от TDEE</li>
+                        <li>Потеря мышц</li>
+                        <li>Замедление метаболизма</li>
+                        <li>Риск срывов</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ===== 6. ОШИБКИ ===== -->
+            <h2><i class="fas fa-exclamation-triangle"></i> 6. Частые ошибки</h2>
+            <div class="error-card">
+                <div class="error-title">❌ Слишком агрессивный дефицит</div>
+                <div class="error-desc">Чем меньше ешь — тем быстрее худеешь? Нет. Метаболизм замедляется.</div>
+                <div class="error-fix">✅ Держитесь в диапазоне 10–20% дефицита.</div>
+            </div>
+            <div class="error-card">
+                <div class="error-title">❌ Неправильный подсчёт</div>
+                <div class="error-desc">Забываете записывать перекусы, соусы, напитки.</div>
+                <div class="error-fix">✅ Используйте кухонные весы и приложения (FatSecret, YAZIO).</div>
+            </div>
+            <div class="error-card">
+                <div class="error-title">❌ Игнорирование активности</div>
+                <div class="error-desc">Пытаетесь создать дефицит только за счёт еды.</div>
+                <div class="error-fix">✅ Сочетайте урезание калорий с движением.</div>
+            </div>
+            <div class="error-card">
+                <div class="error-title">❌ Пропуск приёмов пищи</div>
+                <div class="error-desc">Пропускаете завтрак — переедаете вечером.</div>
+                <div class="error-fix">✅ Распределяйте калории на 3–4 приёма.</div>
+            </div>
+            <div class="error-card">
+                <div class="error-title">❌ Игнорирование плато</div>
+                <div class="error-desc">Вес остановился — вы паникуете и урезаете калории ещё сильнее.</div>
+                <div class="error-fix">✅ Подождите 1–2 недели, добавьте активность.</div>
+            </div>
+
+            <!-- ===== 7. МИФЫ ===== -->
+            <h2><i class="fas fa-ban"></i> 7. Мифы о дефиците</h2>
+            <div class="myth-grid">
+                <div class="myth-card">
+                    <div class="myth-statement">«Чтобы похудеть, нужно есть меньше 1000 ккал»</div>
+                    <div class="myth-truth">❌ Опасно. Минимум — 1200 для женщин, 1500 для мужчин.</div>
+                </div>
+                <div class="myth-card">
+                    <div class="myth-statement">«Дефицит работает только без углеводов»</div>
+                    <div class="myth-truth">❌ Нет. Важно общее количество калорий, а не исключение групп продуктов.</div>
+                </div>
+                <div class="myth-card">
+                    <div class="myth-statement">«Чем больше дефицит — тем быстрее результат»</div>
+                    <div class="myth-truth">❌ Только в краткосрочной перспективе. Долгосрочно — срывы и замедление метаболизма.</div>
+                </div>
+            </div>
+
+            <!-- ===== 8. НАУКА ===== -->
+            <h2><i class="fas fa-microscope"></i> 8. Что говорят исследования</h2>
+            <div class="science-grid">
+                <div class="science-card">
+                    <div class="quote-mark">“</div>
+                    <p class="science-text">«Умеренный дефицит (10–20%) даёт устойчивую потерю веса без замедления метаболизма.»</p>
+                    <div class="science-source"><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank">Am J Clin Nutr, 2024</a></div>
+                </div>
+                <div class="science-card">
+                    <div class="quote-mark">“</div>
+                    <p class="science-text">«Дефицит 500 ккал/день даёт потерю 0,5–0,7 кг жира в неделю.»</p>
+                    <div class="science-source"><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank">J Nutrition, 2025</a></div>
+                </div>
+                <div class="science-card">
+                    <div class="quote-mark">“</div>
+                    <p class="science-text">«Дефицит более 25% от TDEE повышает риск срыва и замедляет метаболизм.»</p>
+                    <div class="science-source"><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank">Obesity Reviews, 2024</a></div>
+                </div>
+            </div>
+
+            <!-- ===== 9. ТАБЛИЦА НОРМ ===== -->
+            <h2><i class="fas fa-table"></i> 9. Средняя суточная норма калорий</h2>
+            <table class="norm-table">
+                <thead>
+                    <tr>
+                        <th>Возраст</th>
+                        <th>Мужчины (ккал)</th>
+                        <th>Женщины (ккал)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>19–25 лет</td><td>2400–3000</td><td>2000–2400</td></tr>
+                    <tr><td>26–35 лет</td><td>2400–3000</td><td>1800–2400</td></tr>
+                    <tr><td>36–45 лет</td><td>2200–2800</td><td>1800–2200</td></tr>
+                    <tr><td>46–60 лет</td><td>2200–2800</td><td>1600–2200</td></tr>
+                    <tr><td>60+ лет</td><td>2000–2600</td><td>1500–2000</td></tr>
+                </tbody>
+            </table>
+
+            <!-- ===== 10. МИНИ-ГАЙДЫ ===== -->
+            <h2><i class="fas fa-lightbulb"></i> 10. Практические гайды</h2>
+            <div class="mini-guide">
+                <h4><i class="fas fa-calculator"></i> Как рассчитать дефицит за 5 минут</h4>
+                <p><span class="g-step">➡️</span> Используйте формулу выше или калькулятор на сайте.</p>
+            </div>
+            <div class="mini-guide">
+                <h4><i class="fas fa-utensils"></i> Как создать дефицит без голодовки</h4>
+                <p><span class="g-step">➡️</span> Замените сладкие напитки на воду.<br>
+                <span class="g-step">➡️</span> Увеличьте порцию овощей.<br>
+                <span class="g-step">➡️</span> Добавьте белок в каждый приём пищи.<br>
+                <span class="g-step">➡️</span> Ходите 5000–7000 шагов в день.</p>
+            </div>
+            <div class="mini-guide">
+                <h4><i class="fas fa-dumbbell"></i> Как сохранить мышцы на дефиците</h4>
+                <p><span class="g-step">➡️</span> Ешьте 1,6–2 г белка на кг веса.<br>
+                <span class="g-step">➡️</span> Силовые тренировки 2–3 раза в неделю.<br>
+                <span class="g-step">➡️</span> Дефицит не больше 20% от TDEE.</p>
+            </div>
+
+            <!-- ===== 11. FAQ ===== -->
+            <h2><i class="fas fa-question-circle"></i> 11. Часто задаваемые вопросы</h2>
+            <div class="faq-item">
+                <div class="faq-question"><span>Сколько калорий нужно съедать, чтобы похудеть?</span> <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">Индивидуально. Используйте формулу Миффлина-Сан Жеора или наш <a href="https://maxstotyka.github.io/fithealthloss/calorie-calculator.html">калькулятор</a>.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question"><span>Можно ли похудеть без подсчёта калорий?</span> <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">Можно, но сложнее. Подсчёт — самый надёжный способ.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question"><span>Почему вес стоит на месте при дефиците?</span> <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">Причины: неправильный подсчёт, адаптация организма, задержка воды. Проверьте расчёты и подождите 1–2 недели.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question"><span>Какой дефицит безопасный?</span> <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">10–20% от TDEE или 300–500 ккал в день.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question"><span>Сколько времени нужно быть на дефиците?</span> <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">Столько, сколько нужно для достижения цели. Затем плавно выходите на поддержание.</div>
+            </div>
+
+            <!-- ===== ВЫВОД ===== -->
+            <div style="background: rgba(124,58,237,0.1); border-radius:16px; padding:1.2rem 1.5rem; margin:1.5rem 0; border-left:4px solid #7c3aed;">
+                <p style="margin:0; font-size:1rem; color:#fff;">
+                    <strong>🎯 Запомните главное:</strong><br>
+                    1. Рассчитайте BMR и TDEE.<br>
+                    2. Создайте дефицит 10–20%.<br>
+                    3. Не опускайтесь ниже 1200/1500 ккал.<br>
+                    4. Сочетайте с активностью.<br>
+                    5. Будьте терпеливы — результат придёт.
+                </p>
+            </div>
+
+            <!-- ===== КНОПКА ===== -->
+            <div style="text-align:center; margin:1.5rem 0;">
+                <a href="https://play.google.com/store/apps/details?id=com.booststamina.days30" target="_blank" class="btn-download">
+                    <i class="fab fa-google-play"></i> Скачать Boost Stamina
+                </a>
+            </div>
+
+        </div> <!-- /article-content -->
+    </div> <!-- /article-block -->
+
+    <!-- ===== ПОДВАЛ ===== -->
+    <footer>
+        <p>© 2026 FitHealthLoss. Все права защищены.</p>
+        <p>
+            <a href="https://t.me/Maximusamat" style="color:#666;" rel="nofollow">Telegram</a>
+        </p>
+    </footer>
+</div>
+
+<!-- ===== КНОПКА ВВЕРХ ===== -->
+<div class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></div>
+
+<script>
+    // Кнопка вверх
+    const backBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+        backBtn.classList.toggle('visible', window.scrollY > 400);
+    });
+    backBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // FAQ Аккордеон
+    document.querySelectorAll('.faq-question').forEach(q => {
+        q.addEventListener('click', function() {
+            const answer = this.nextElementSibling;
+            answer.classList.toggle('show');
+            const icon = this.querySelector('i');
+            if (icon) {
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            }
+        });
+    });
+</script>
+</body>
+</html>
