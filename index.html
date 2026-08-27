@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -6,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitHealthLoss — Фитнес, здоровье, питание</title>
     <meta name="description" content="Научно-популярный проект о здоровом образе жизни, похудении, правильном питании и фитнесе. Приложение Boost Stamina.">
-    <link rel="canonical" href="https://fithealthloss.github.io/" />
+    <link rel="canonical" href="https://fithealthloss.ru/" />
 
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
@@ -38,7 +37,7 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://fithealthloss.github.io/articles/biohacking-for-beginners-guide.html"
+        "@id": "https://fithealthloss.ru/articles/biohacking-for-beginners-guide.html"
       }
     }
     </script>
@@ -66,7 +65,7 @@
             margin: 0 auto;
             padding: 0 1.5rem;
         }
-        /* Шапка (только логотип) */
+        /* Шапка с навигацией */
         .header {
             display: flex;
             align-items: center;
@@ -95,6 +94,21 @@
             font-size: 0.7rem;
             color: #aaa;
             letter-spacing: 0.5px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .nav-links a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: 0.2s;
+        }
+        .nav-links a:hover {
+            color: #b88aff;
         }
         /* Герой */
         .hero {
@@ -292,6 +306,8 @@
         @media (max-width: 600px) {
             .hero h1 { font-size: 2.2rem; }
             .container { padding: 0 1rem; }
+            .header { flex-direction: column; align-items: stretch; }
+            .nav-links { justify-content: center; }
         }
     </style>
 </head>
@@ -299,16 +315,19 @@
 <div class="bg-gradient"></div>
 <div class="container">
 
-    <!-- ===== ШАПКА (только логотип) ===== -->
+    <!-- ===== ШАПКА с навигацией ===== -->
     <div class="header">
-        <a href="/" class="logo-area">
+        <a href="https://fithealthloss.ru/" class="logo-area">
             <img src="/assets/stk_logo.png" alt="FitHealthLoss" class="logo-img" width="48" height="48" onerror="this.style.display='none'">
             <div class="brand-text">
                 <span class="brand-title">FitHealthLoss</span>
                 <span class="brand-sub">фитнес, здоровье и наука о теле</span>
             </div>
         </a>
-        <!-- Навигация убрана -->
+        <div class="nav-links">
+            <a href="https://fithealthloss.ru/">Главная страница</a>
+            <a href="https://fithealthloss.ru/articles.html">Статьи</a>
+        </div>
     </div>
 
     <!-- ===== ГЕРОЙ ===== -->
@@ -347,7 +366,7 @@
     <div class="latest-articles">
         <div class="section-header">
             <h2>📚 Свежая статья</h2>
-            <a href="/articles.html">Все статьи →</a>
+            <a href="https://fithealthloss.ru/articles.html">Все статьи →</a>
         </div>
         <div class="articles-grid" id="homeArticlesGrid">
             <!-- Одна карточка вставляется через JS (ниже) -->
@@ -359,7 +378,6 @@
         <p>© 2026 FitHealthLoss. Все права защищены.</p>
         <p>
             <a href="https://t.me/Maximusamat" style="color:#aaa;">Telegram</a>
-            <!-- Ссылки на оферту и о проекте убраны -->
         </p>
     </footer>
 </div>
@@ -373,7 +391,7 @@
     // Данные одной статьи
     const articles = [{
         image: 61,
-        url: "/articles/biohacking-for-beginners-guide.html",
+        url: "https://fithealthloss.ru/articles/biohacking-for-beginners-guide.html",
         title: "Биохакинг для начинающих: простые способы улучшить самочувствие",
         date: "25 августа 2026",
         readtime: "16 мин чтения",
